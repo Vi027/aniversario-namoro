@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aniversário de Namoro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Meu Amor</h1>
+        <p>Desde que te conheci, meu mundo se iluminou. Você é a razão do meu sorriso e a inspiração dos meus dias.</p>
+        <p>Te amo mais do que palavras podem expressar. Obrigado por ser você e por estar na minha vida.</p>
+        <p>Para sempre sua,</p>
+        <p><strong>Vitoria <3</strong></p>
+    </div>
+    <div class="hearts"></div>
+
+    <script>
+        const heartsContainer = document.querySelector('.hearts');
+        const numberOfHearts = 30; // número de corações
+    
+        for (let i = 0; i < numberOfHearts; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + 'vw'; // posição horizontal aleatória
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's'; // duração aleatória
+            heartsContainer.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
